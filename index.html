@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | FlyBird</title>
+    <title>Unity WebGL Player | FlapTap</title>
 	<style>
         #preLoader{
         	background: #0000 url(img/Fidget-spinner.gif) no-repeat center center;
@@ -18,7 +18,7 @@
   <body style="text-align: center; padding: 0; border: 0; margin: 0;">
     <canvas id="unity-canvas" width=760 height=1024 tabindex="-1" style="width: 760px; height: 1024px; background: #231F20"></canvas>
    <div id="preLoader"></div>
-    <script src="Build/FlyBird_Build.loader.js"></script>
+    <script src="Build/flaptap.loader.js"></script>
     <script>
 	var TOKEN = "I AM THE TOKEN";
 	var API = "";
@@ -39,13 +39,13 @@
       //}
 
       createUnityInstance(document.querySelector("#unity-canvas"), {
-        dataUrl: "Build/FlyBird_Build.data.unityweb",
-        frameworkUrl: "Build/FlyBird_Build.framework.js.unityweb",
-        codeUrl: "Build/FlyBird_Build.wasm.unityweb",
+        dataUrl: "Build/flaptap.data",
+        frameworkUrl: "Build/flaptap.framework.js",
+        codeUrl: "Build/flaptap.wasm",
         streamingAssetsUrl: "StreamingAssets",
-        companyName: "Y@RED",
-        productName: "FlyBird",
-        productVersion: "0.1.0",
+        companyName: "DefaultCompany",
+        productName: "FlapTap",
+        productVersion: "1.0",
         // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
         // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
       });
