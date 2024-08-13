@@ -18,12 +18,12 @@
   <body style="text-align: center; padding: 0; border: 0; margin: 0;">
     <canvas id="unity-canvas" width=400 height=600 tabindex="-1" style="width: 400px; height: 600px; background: #231F20"></canvas>
    <div id="preLoader"></div>
-    <script src="Build/FlapTap.loader.js"></script>
+    <script src="Build/FlyBird_Build.loader.js"></script>
     <script>
 	var TOKEN = "I AM THE TOKEN";
 	var API = "";
 	function SetToken(str){ TOKEN = str;}function SetApi(str){ API = str;}
-      if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+     // if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
         // Mobile device style: fill the whole browser client area with the game canvas:
         var meta = document.createElement('meta');
         meta.name = 'viewport';
@@ -36,12 +36,12 @@
         canvas.style.position = "fixed";
 
         document.body.style.textAlign = "left";
-      }
+      //}
 
       createUnityInstance(document.querySelector("#unity-canvas"), {
-        dataUrl: "Build/FlapTap.data",
-        frameworkUrl: "Build/FlapTap.framework.js",
-        codeUrl: "Build/FlapTap.wasm",
+        dataUrl: "Build/FlyBird_Build.data",
+        frameworkUrl: "Build/FlyBird_Build.framework.js",
+        codeUrl: "Build/FlyBird_Build.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "Y@RED",
         productName: "FlyBird",
