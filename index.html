@@ -24,25 +24,9 @@
    <div id="preLoader"></div>
     <script src="Build/flapptapp.loader.js"></script>
     <script>
-	var TOKEN = "I AM THE TOKEN";
-	var API = "";
-	function SetToken(str){ TOKEN = str;}function SetApi(str){ API = str;}
-     // if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
-        // Mobile device style: fill the whole browser client area with the game canvas:
-        var meta = document.createElement('meta');
-        meta.name = 'viewport';
-        meta.content = 'width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes';
-        document.getElementsByTagName('head')[0].appendChild(meta);
-
-        var canvas = document.querySelector("#unity-canvas");
-        canvas.style.width = "1%";
-        canvas.style.height = "1%";
-        canvas.style.position = "fixed";
-
-        document.body.style.textAlign = "left";
-      //}
-
-      createUnityInstance(document.querySelector("#unity-canvas"), {
+	    var buildUrl = "Build";
+    var loaderUrl = buildUrl + "Build/flapptapp.loader.js";
+      var config = {
         dataUrl: "Build/flapptapp.data.unityweb",
         frameworkUrl: "Build/flapptapp.framework.js.unityweb",
         codeUrl: "Build/flapptapp.wasm.unityweb",
@@ -54,6 +38,31 @@
         // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
       });
 
+	var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+    if(isMobile) {
+      // Define a maximum pixel ratio for mobile to avoid rendering at too high resolutions
+      const maxPixelRatioMobile = 2.0;
+      config.devicePixelRatio = Math.min(window.devicePixelRatio, maxPixelRatioMobile);
+    }
+
+    var canvas = document.querySelector("#unity-canvas");
+    var loadingContainer = document.querySelector("#unity-loading-container");
+    var loadingBar = document.querySelector("#unity-loading-bar-inner");
+
+    var unityGame;
+    var script = document.createElement("script");
+    script.src = loaderUrl;
+    script.onload = function() {
+      createUnityInstance(canvas, config, function(progress) {
+        loadingBar.style.width = 100 * progress + "%";
+      }).then(function(unityInstance) {
+        unityGame = unityInstance;
+        loadingContainer.classList.add("finished");
+      }).catch(function(message) {
+        alert(message);
+      });
+    };
+    document.body.appendChild(script);
     </script>
   </body>
 </html>
