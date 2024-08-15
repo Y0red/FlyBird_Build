@@ -18,7 +18,7 @@
   <body style="text-align: center; padding: 0; border: 0; margin: 0;">
     <canvas id="unity-canvas" width=400 height=600 tabindex="-1" style="width: 400px; height: 600px; background: #231F20"></canvas>
    <div id="preLoader"></div>
-    <script src="Build/flaptapp.loader.js"></script>
+    <script src="Build/flapptapp.loader.js"></script>
     <script>
 	var TOKEN = "I AM THE TOKEN";
 	var API = "";
@@ -39,9 +39,9 @@
       //}
 
       createUnityInstance(document.querySelector("#unity-canvas"), {
-        dataUrl: "Build/flaptapp.data.unityweb",
-        frameworkUrl: "Build/flaptapp.framework.js.unityweb",
-        codeUrl: "Build/flaptapp.wasm.unityweb",
+        dataUrl: "Build/flapptapp.data.unityweb",
+        frameworkUrl: "Build/flapptapp.framework.js.unityweb",
+        codeUrl: "Build/flapptapp.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "FlapTap",
