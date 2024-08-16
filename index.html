@@ -5,20 +5,10 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Start loading assets right away, to have them (partly) loaded already when they are requested -->
-  <link rel="preload" href="Build//6000.0.14f1-minsize-webgl2-manualBuild.data.unityweb" as="fetch" type="application/octet-stream" crossorigin>
-  <link rel="preload" href="Build/6000.0.14f1-minsize-webgl2-manualBuild.framework.js.unityweb" as="script">
-  <link rel="preload" href="Build/6000.0.14f1-minsize-webgl2-manualBuild.wasm.unityweb" as="fetch" type="application/wasm" crossorigin>
+  <link rel="preload" href="Build//0ef2864cb7f25afb6d01b5672646ba29.data.unityweb" as="fetch" type="application/octet-stream" crossorigin>
+  <link rel="preload" href="Build/28c415d014074342cbd4e0b9aff0bebe.framework.js.unityweb" as="script">
+  <link rel="preload" href="Build/da196c084aca3974e4b8a7d4f78550e2.wasm.unityweb" as="fetch" type="application/wasm" crossorigin>
   <title>FlapTap</title>
-  <style>
-        #preLoader{
-        	background: #0000 url(img/Fidget-spinner.gif) no-repeat center center;
-        	background-size: 20%;
-        	height: 100vh;
-        	width: 100%;
-        	position: fixed;
-        	z-index: 100;
-        }
-    </style>
   <style>
     * {
       padding: 0;
@@ -113,20 +103,19 @@
     <canvas id="unity-canvas"></canvas>
   </div>
   <div id="unity-loading-container">
-    <div id="preLoader"></div>
     <img src="logo.svg" class="logo" alt="Logo DefaultCompany">
     <div id="unity-loading-bar">
       <div id="unity-loading-bar-inner"></div>
     </div>
   </div>
-  <script src="Build/6000.0.14f1-minsize-webgl2-manualBuild.loader.js"></script>
+  <script src="Build/1fcc911f25da4fc7aa947eb109bd48f4.loader.js"></script>
   <script>
     var buildUrl = "Build";
-    var loaderUrl = buildUrl + "/6000.0.14f1-minsize-webgl2-manualBuild.loader.js";
+    var loaderUrl = buildUrl + "/1fcc911f25da4fc7aa947eb109bd48f4.loader.js";
     var config = {
-      dataUrl: buildUrl + "/6000.0.14f1-minsize-webgl2-manualBuild.data.unityweb",
-      frameworkUrl: buildUrl + "/6000.0.14f1-minsize-webgl2-manualBuild.framework.js.unityweb",
-      codeUrl: buildUrl + "/6000.0.14f1-minsize-webgl2-manualBuild.wasm.unityweb",
+      dataUrl: buildUrl + "/0ef2864cb7f25afb6d01b5672646ba29.data.unityweb",
+      frameworkUrl: buildUrl + "/28c415d014074342cbd4e0b9aff0bebe.framework.js.unityweb",
+      codeUrl: buildUrl + "/da196c084aca3974e4b8a7d4f78550e2.wasm.unityweb",
       streamingAssetsUrl: "StreamingAssets",
       companyName: "DefaultCompany",
       productName: "FlapTap",
