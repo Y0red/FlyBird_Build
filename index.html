@@ -5,11 +5,11 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Start loading assets right away, to have them (partly) loaded already when they are requested -->
-  <link rel="preload" href="Build//0ef2864cb7f25afb6d01b5672646ba29.data.unityweb" as="fetch" type="application/octet-stream" crossorigin>
-  <link rel="preload" href="Build/28c415d014074342cbd4e0b9aff0bebe.framework.js.unityweb" as="script">
-  <link rel="preload" href="Build/da196c084aca3974e4b8a7d4f78550e2.wasm.unityweb" as="fetch" type="application/wasm" crossorigin>
-  <title>FlapTap</title>
-  <style>
+  <link rel="preload" href="Build//2021.3.24f1-minsize-webgl2-manualBuild.data.unityweb" as="fetch" type="application/octet-stream" crossorigin>
+  <link rel="preload" href="Build/2021.3.24f1-minsize-webgl2-manualBuild.framework.js.unityweb" as="script">
+  <link rel="preload" href="Build/2021.3.24f1-minsize-webgl2-manualBuild.wasm.unityweb" as="fetch" type="application/wasm" crossorigin>
+  <title>GuzoGeez</title>
+<style>
     * {
       padding: 0;
       margin: 0;
@@ -72,16 +72,18 @@
     }
 
     #unity-loading-container .logo {
-      width: 15%;
-      height: 15%;
+      width: 100%;
+      height: 100%;
     }
 
     #unity-loading-bar {
-      position: relative;
+	position: absolute;
+      left: 30%;
+      top: 70%;
       width: 40%;
       height: 10px;
       background-color: #fff;
-      border: 1px solid #ccc;
+      border: 2px solid #ccc;
       border-radius: 10px;
     }
 
@@ -96,6 +98,7 @@
       transition: 400ms linear;
     }
   </style>
+
 </head>
 
 <body>
@@ -103,22 +106,23 @@
     <canvas id="unity-canvas"></canvas>
   </div>
   <div id="unity-loading-container">
-    <img src="logo.svg" class="logo" alt="Logo DefaultCompany">
+    <img src="logo.svg" class="logo" alt="Logo Y@RED">
     <div id="unity-loading-bar">
       <div id="unity-loading-bar-inner"></div>
     </div>
   </div>
-  <script src="Build/1fcc911f25da4fc7aa947eb109bd48f4.loader.js"></script>
+  <script src="Build/2021.3.24f1-minsize-webgl2-manualBuild.loader.js"></script>
   <script>
+    var API = "https://y0red.github.io/FlyBird_Build/StreamingAssets/main";
     var buildUrl = "Build";
-    var loaderUrl = buildUrl + "/1fcc911f25da4fc7aa947eb109bd48f4.loader.js";
+    var loaderUrl = buildUrl + "/2021.3.24f1-minsize-webgl2-manualBuild.loader.js";
     var config = {
-      dataUrl: buildUrl + "/0ef2864cb7f25afb6d01b5672646ba29.data.unityweb",
-      frameworkUrl: buildUrl + "/28c415d014074342cbd4e0b9aff0bebe.framework.js.unityweb",
-      codeUrl: buildUrl + "/da196c084aca3974e4b8a7d4f78550e2.wasm.unityweb",
+      dataUrl: buildUrl + "/2021.3.24f1-minsize-webgl2-manualBuild.data.unityweb",
+      frameworkUrl: buildUrl + "/2021.3.24f1-minsize-webgl2-manualBuild.framework.js.unityweb",
+      codeUrl: buildUrl + "/2021.3.24f1-minsize-webgl2-manualBuild.wasm.unityweb",
       streamingAssetsUrl: "StreamingAssets",
-      companyName: "DefaultCompany",
-      productName: "FlapTap",
+      companyName: "Y@RED",
+      productName: "GuzoGeez",
       productVersion: "1.0",
     };
 
@@ -141,7 +145,7 @@
         loadingBar.style.width = 100 * progress + "%";
       }).then(function(unityInstance) {
         unityGame = unityInstance;
-        loadingContainer.classList.add("finished");
+        //loadingContainer.classList.add("finished");
       }).catch(function(message) {
         alert(message);
       });
