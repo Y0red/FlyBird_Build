@@ -5,9 +5,9 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Start loading assets right away, to have them (partly) loaded already when they are requested -->
-  <link rel="preload" href="Build//15c8270dac0fb939389d14c10bb3e4d0.data.unityweb" as="fetch" type="application/octet-stream" crossorigin>
-  <link rel="preload" href="Build/dfb493f93ae11b6150ce55bc6383d473.framework.js.unityweb" as="script">
-  <link rel="preload" href="Build/d80128ddba198b05727728cc7894a085.wasm.unityweb" as="fetch" type="application/wasm" crossorigin>
+  <link rel="preload" href="Build//a9a572148d40d868565884632e1f26b2.data.unityweb" as="fetch" type="application/octet-stream" crossorigin>
+  <link rel="preload" href="Build/c12a8ca0f1a141b6602227389f6358a6.framework.js.unityweb" as="script">
+  <link rel="preload" href="Build/d74958232401adbf835abf884a0390c7.wasm.unityweb" as="fetch" type="application/wasm" crossorigin>
   <title>FlapTap</title>
 <style>
     * {
@@ -112,15 +112,15 @@
       <div id="unity-loading-bar-inner"></div>
     </div>
   </div>
-  <script src="Build/ad7faff27ca0e955416efb9795e650e5.loader.js"></script>
+  <script src="Build/40b5826c0bb9d8ee9b73366edff4a480.loader.js"></script>
   <script>
-    var API = "https://y0red.github.io/FlyBird_Build/Games/NewGame2/StreamingAssets/main";
+    var API = "https://y0red.github.io/FlyBird_Build/StreamingAssets/main";
     var buildUrl = "Build";
-    var loaderUrl = buildUrl + "/ad7faff27ca0e955416efb9795e650e5.loader.js";
+    var loaderUrl = buildUrl + "/40b5826c0bb9d8ee9b73366edff4a480.loader.js";
     var config = {
-      dataUrl: buildUrl + "/15c8270dac0fb939389d14c10bb3e4d0.data.unityweb",
-      frameworkUrl: buildUrl + "/dfb493f93ae11b6150ce55bc6383d473.framework.js.unityweb",
-      codeUrl: buildUrl + "/d80128ddba198b05727728cc7894a085.wasm.unityweb",
+      dataUrl: buildUrl + "/a9a572148d40d868565884632e1f26b2.data.unityweb",
+      frameworkUrl: buildUrl + "/c12a8ca0f1a141b6602227389f6358a6.framework.js.unityweb",
+      codeUrl: buildUrl + "/d74958232401adbf835abf884a0390c7.wasm.unityweb",
       streamingAssetsUrl: "StreamingAssets",
       companyName: "DefaultCompany",
       productName: "FlapTap",
@@ -133,6 +133,14 @@
       const maxPixelRatioMobile = 2.0;
       config.devicePixelRatio = Math.min(window.devicePixelRatio, maxPixelRatioMobile);
     }
+    else
+    {
+	
+        var canvas = document.querySelector("#unity-canvas");
+        canvas.style.width = "50%";
+        canvas.style.position = "fixed";
+    }
+
 
     var canvas = document.querySelector("#unity-canvas");
     var loadingContainer = document.querySelector("#unity-loading-container");
