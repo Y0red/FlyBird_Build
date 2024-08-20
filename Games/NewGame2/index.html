@@ -160,7 +160,8 @@
       createUnityInstance(canvas, config, function(progress) {
         loadingBar.style.width = 100 * progress + "%";
       }).then(function(unityInstance) {
-        unityGame = unityInstance;TelegramGameProxy.shareScore();
+        unityGame = unityInstance;
+	      //TelegramGameProxy.shareScore();
         //loadingContainer.classList.add("finished");
       }).catch(function(message) {
         alert(message);
