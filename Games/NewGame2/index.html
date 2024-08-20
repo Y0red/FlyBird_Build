@@ -4,17 +4,17 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta
+   <meta
       name="description"
-      content="FlapyBird Game build by Y@RED"
+      content="PlayGround Website build by Y@RED"
     />
     <script src="https://cdn.jsdelivr.net/npm/eruda"></script>
     <script> eruda.init()</script>
-    <script src="https://telegram.org/js/games.js"></script>
+    <script className="telegram" src='https://telegram.org/js/telegram-web-app.js'></script>
   <!-- Start loading assets right away, to have them (partly) loaded already when they are requested -->
-  <link rel="preload" href="Build//78d0fbf5ee4ae57c86b4ad4db7a8779b.data.unityweb" as="fetch" type="application/octet-stream" crossorigin>
-  <link rel="preload" href="Build/252e846feae55d7d52352f95eaec8af5.framework.js.unityweb" as="script">
-  <link rel="preload" href="Build/67c724919bd27b2d659da77ca0a893c5.wasm.unityweb" as="fetch" type="application/wasm" crossorigin>
+  <link rel="preload" href="Build//6be53b91ff2ed71f00ba3f2af411a5f5.data.unityweb" as="fetch" type="application/octet-stream" crossorigin>
+  <link rel="preload" href="Build/528bc84487c4c1e4f0ecbae6a5d3d104.framework.js.unityweb" as="script">
+  <link rel="preload" href="Build/4de0d8abd23c40b871efcda335d4991e.wasm.unityweb" as="fetch" type="application/wasm" crossorigin>
   <title>FlapTap</title>
 <style>
     * {
@@ -119,15 +119,15 @@
       <div id="unity-loading-bar-inner"></div>
     </div>
   </div>
-  <script src="Build/21c48ebfbde4b8f41b480269e2819e7f.loader.js"></script>
+  <script src="Build/40b5826c0bb9d8ee9b73366edff4a480.loader.js"></script>
   <script>
     var API = "https://y0red.github.io/FlyBird_Build/StreamingAssets/main";
     var buildUrl = "Build";
-    var loaderUrl = buildUrl + "/21c48ebfbde4b8f41b480269e2819e7f.loader.js";
+    var loaderUrl = buildUrl + "/40b5826c0bb9d8ee9b73366edff4a480.loader.js";
     var config = {
-      dataUrl: buildUrl + "/78d0fbf5ee4ae57c86b4ad4db7a8779b.data.unityweb",
-      frameworkUrl: buildUrl + "/252e846feae55d7d52352f95eaec8af5.framework.js.unityweb",
-      codeUrl: buildUrl + "/67c724919bd27b2d659da77ca0a893c5.wasm.unityweb",
+      dataUrl: buildUrl + "/6be53b91ff2ed71f00ba3f2af411a5f5.data.unityweb",
+      frameworkUrl: buildUrl + "/528bc84487c4c1e4f0ecbae6a5d3d104.framework.js.unityweb",
+      codeUrl: buildUrl + "/4de0d8abd23c40b871efcda335d4991e.wasm.unityweb",
       streamingAssetsUrl: "StreamingAssets",
       companyName: "DefaultCompany",
       productName: "FlapTap",
@@ -161,14 +161,17 @@
         loadingBar.style.width = 100 * progress + "%";
       }).then(function(unityInstance) {
         unityGame = unityInstance;
-	      //TelegramGameProxy.shareScore();
         //loadingContainer.classList.add("finished");
       }).catch(function(message) {
         alert(message);
       });
     };
     document.body.appendChild(script);
-	  console.log ("game data: "+ JSON.stringify(window.TelegramGameProxy.initParams.chatId));
+    function SendScore(score)
+	{
+	   console.log ("user data: "+ JSON.stringify(window.TelegramGameProxy.initParams.chatId));
+	   console.log('postScore: '+ score);
+	}
   </script>
 </body>
 </html>
