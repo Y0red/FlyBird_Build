@@ -1,45 +1,14 @@
 {
-  "ok": "false",
+  "ok": "true",
   "games": [
     {
       "game_description": "This is game 1",
       "game_id": 1,
-      "game_image_url": "https://cdn.pixabay.com/photo/2016/10/20/18/35/earth-1756274_640.jpg",
-      "game_name": "Game 1",
+      "game_image_url": "https://y0red.github.io/FlyBird_Build/guzogeezlogo.gif",
+      "game_name": "Guzo Geez",
       "game_short_name": "FGG",
-      "game_status": "PUBLISHED"
+      "game_status": "PUBLISHED",
+      "game_url": "",
     },
-    {
-      "game_description": "This is game 4",
-      "game_id": 2,
-      "game_image_url": "https://cdn.pixabay.com/photo/2023/09/30/09/11/dachshund-8285216_1280.jpg",
-      "game_name": "Game 2",
-      "game_short_name": "FGG",
-      "game_status": "PUBLISHED"
-    },
-    {
-      "game_description": "This is game 3",
-      "game_id": 3,
-      "game_image_url": "https://cdn.pixabay.com/photo/2016/10/20/18/35/earth-1756274_640.jpg",
-      "game_name": "Game 3",
-      "game_short_name": "FGG",
-      "game_status": "PUBLISHED"
-    },
-    {
-      "game_description": "This is game 4",
-      "game_id": 4,
-      "game_image_url": "https://cdn.pixabay.com/photo/2016/10/20/18/35/earth-1756274_640.jpg",
-      "game_name": "Game 4",
-      "game_short_name": "FGG",
-      "game_status": "PUBLISHED"
-    },
-    {
-      "game_description": "This is game 5",
-      "game_id": 5,
-      "game_image_url": "https://cdn.pixabay.com/photo/2016/10/20/18/35/earth-1756274_640.jpg",
-      "game_name": "Game 5",
-      "game_short_name": "FGG",
-      "game_status": "PUBLISHED"
-    }
   ]
 }
