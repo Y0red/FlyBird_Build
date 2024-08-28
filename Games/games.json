@@ -7,7 +7,8 @@
       "game_image_url": "https://y0red.github.io/FlyBird_Build/Games/guzogeezlogo.png",
       "game_name": "Game 1",
       "game_short_name": "FGG",
-      "game_status": "PUBLISHED"
+      "game_status": "PUBLISHED",
+      "game_link": "https://t.me/y0games_bot/PGA",
     }
   ]
 }
