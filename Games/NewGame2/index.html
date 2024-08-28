@@ -169,8 +169,26 @@
     document.body.appendChild(script);
     function SendScore(score)
 	{
-	   console.log ("user data: "+ JSON.stringify(window.TelegramGameProxy.initParams));
-	   console.log('postScore: '+ score);
+	  // console.log ("user data: "+ JSON.stringify(window.TelegramGameProxy.initParams));
+	  // console.log('postScore: '+ score);
+		var raw = JSON.stringify({
+  "method": "setGameScore",
+  "game_short_name": "FGG",
+  "chat_id": window.TelegramGameProxy.initParams.chatId,
+  "user_id": window.TelegramGameProxy.initParams.chatId,
+  "message_id": window.TelegramGameProxy.initParams.messageId,
+  "score": score
+});
+
+var requestOptions = {
+  method: 'POST',
+  body: raw,
+};
+
+fetch("https://play-ground-next.netlify.app/api/bot/sendscore", requestOptions)
+  .then(response => response.text())
+  .then(result => console.log(result))
+  .catch(error => console.log('error', error));
 	}
   </script>
 </body>
