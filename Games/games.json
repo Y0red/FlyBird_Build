@@ -4,12 +4,14 @@
     {
       "game_url": "https://y0red.github.io/FlyBird_Build/Games/NewGame1/",
       "game_short_name": "FGG",
+      "game_name": "Guzo Geez Game",
       "game_status": "PUBLISHED",
       "game_share_link": "https://t.me/y0games_bot/PGA"
     },
     {
       "game_url": "https://y0red.github.io/FlyBird_Build/Games/NewGame2/",
       "game_short_name": "PGA",
+      "game_name": "Flap Tap Game",
       "game_status": "PUBLISHED",
       "game_share_link": "https://t.me/y0games_bot/PGA"
     }
