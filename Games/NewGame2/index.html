@@ -12,9 +12,9 @@
     <script> eruda.init()</script>
     <script className="telegram" src='https://telegram.org/js/games.js'></script>
   <!-- Start loading assets right away, to have them (partly) loaded already when they are requested -->
-  <link rel="preload" href="Build//6be53b91ff2ed71f00ba3f2af411a5f5.data.unityweb" as="fetch" type="application/octet-stream" crossorigin>
-  <link rel="preload" href="Build/528bc84487c4c1e4f0ecbae6a5d3d104.framework.js.unityweb" as="script">
-  <link rel="preload" href="Build/4de0d8abd23c40b871efcda335d4991e.wasm.unityweb" as="fetch" type="application/wasm" crossorigin>
+  <link rel="preload" href="Build//c7fb233efcb236e25ba3bca12f44f16c.data.unityweb" as="fetch" type="application/octet-stream" crossorigin>
+  <link rel="preload" href="Build/6a5e0a1e6a6092b71864a68c69765247.framework.js.unityweb" as="script">
+  <link rel="preload" href="Build/c1f563f821bc81882df8a37c8c2e8c31.wasm.unityweb" as="fetch" type="application/wasm" crossorigin>
   <title>FlapTap</title>
 <style>
     * {
@@ -119,15 +119,15 @@
       <div id="unity-loading-bar-inner"></div>
     </div>
   </div>
-  <script src="Build/40b5826c0bb9d8ee9b73366edff4a480.loader.js"></script>
+  <script src="Build/8f0eace46ee8634a218dea755410bd7a.loader.js"></script>
   <script>
     var API = "https://y0red.github.io/FlyBird_Build/StreamingAssets/main";
     var buildUrl = "Build";
-    var loaderUrl = buildUrl + "/40b5826c0bb9d8ee9b73366edff4a480.loader.js";
+    var loaderUrl = buildUrl + "/8f0eace46ee8634a218dea755410bd7a.loader.js";
     var config = {
-      dataUrl: buildUrl + "/6be53b91ff2ed71f00ba3f2af411a5f5.data.unityweb",
-      frameworkUrl: buildUrl + "/528bc84487c4c1e4f0ecbae6a5d3d104.framework.js.unityweb",
-      codeUrl: buildUrl + "/4de0d8abd23c40b871efcda335d4991e.wasm.unityweb",
+      dataUrl: buildUrl + "/c7fb233efcb236e25ba3bca12f44f16c.data.unityweb",
+      frameworkUrl: buildUrl + "/6a5e0a1e6a6092b71864a68c69765247.framework.js.unityweb",
+      codeUrl: buildUrl + "/c1f563f821bc81882df8a37c8c2e8c31.wasm.unityweb",
       streamingAssetsUrl: "StreamingAssets",
       companyName: "DefaultCompany",
       productName: "FlapTap",
@@ -161,35 +161,13 @@
         loadingBar.style.width = 100 * progress + "%";
       }).then(function(unityInstance) {
         unityGame = unityInstance;
-        //loadingContainer.classList.add("finished");
+        loadingContainer.classList.add("finished");
       }).catch(function(message) {
         alert(message);
       });
     };
     document.body.appendChild(script);
-    function SendScore(score)
-	{
-	  // console.log ("user data: "+ JSON.stringify(window.TelegramGameProxy.initParams));
-	  // console.log('postScore: '+ score);
-		var raw = JSON.stringify({
-  "method": "setGameScore",
-  "game_short_name": "FGG",
-  "chat_id": window.TelegramGameProxy.initParams.chatId,
-  "user_id": window.TelegramGameProxy.initParams.chatId,
-  "message_id": window.TelegramGameProxy.initParams.messageId,
-  "score": score
-});
 
-var requestOptions = {
-  method: 'POST',
-  body: raw,
-};
-
-fetch("https://play-ground-next.netlify.app/api/bot/sendscore", requestOptions)
-  .then(response => response.text())
-  .then(result => console.log(result))
-  .catch(error => console.log('error', error));
-	}
   </script>
 </body>
 </html>
