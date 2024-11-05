@@ -3,10 +3,10 @@
   "gamesConfig": [
     {
       "game_url": "https://y0red.github.io/FlyBird_Build/Games/NewGame1/",
-      "game_short_name": "FGG",
+      "game_short_name": "GGG",
       "game_name": "Guzo Geez Game",
       "game_status": "PUBLISHED",
-      "game_share_link": "https://t.me/y0games_bot/FGG"
+      "game_share_link": "https://t.me/y0games_bot/GGG"
     },
     {
       "game_url": "https://y0red.github.io/FlyBird_Build/Games/NewGame2/",
@@ -22,9 +22,9 @@
       "game_id": 1,
       "game_image_url": "https://y0red.github.io/FlyBird_Build/Games/guzogeezlogo.png",
       "game_name": "Guzo Geez",
-      "game_short_name": "FGG",
+      "game_short_name": "GGG",
       "game_status": "PUBLISHED",
-      "game_link": "https://t.me/y0games_bot/FGG"
+      "game_link": "https://t.me/y0games_bot/GGG"
     },
     {
       "game_description": "Flap Tap",
