@@ -6,7 +6,7 @@
       "game_short_name": "FGG",
       "game_name": "Guzo Geez Game",
       "game_status": "PUBLISHED",
-      "game_share_link": "https://t.me/y0games_bot/PGA"
+      "game_share_link": "https://t.me/y0games_bot/FGG"
     },
     {
       "game_url": "https://y0red.github.io/FlyBird_Build/Games/NewGame2/",
@@ -18,20 +18,20 @@
   ],
   "games": [
     {
-      "game_description": "This is game 1",
+      "game_description": "Guzo Geez",
       "game_id": 1,
       "game_image_url": "https://y0red.github.io/FlyBird_Build/Games/guzogeezlogo.png",
-      "game_name": "Game 1",
+      "game_name": "Guzo Geez",
       "game_short_name": "FGG",
       "game_status": "PUBLISHED",
-      "game_link": "https://t.me/y0games_bot/PGA"
+      "game_link": "https://t.me/y0games_bot/FGG"
     },
     {
-      "game_description": "This is game 2",
+      "game_description": "Flap Tap",
       "game_id": 2,
-      "game_image_url": "https://y0red.github.io/FlyBird_Build/Games/guzogeezlogo.png",
-      "game_name": "Game 1",
-      "game_short_name": "FGG",
+      "game_image_url": "https://y0red.github.io/FlyBird_Build/Games/screenshot512x384.jpg",
+      "game_name": "Flap Tap",
+      "game_short_name": "PGA",
       "game_status": "PUBLISHED",
       "game_link": "https://t.me/y0games_bot/PGA"
     }
