@@ -9,7 +9,7 @@
       content="PlayGround Website build by Y@RED"
     />
     <script src="https://cdn.jsdelivr.net/npm/eruda"></script>
-    <script> eruda.init()</script>
+    <script> //eruda.init()</script>
     <script className="telegram" src='https://telegram.org/js/games.js'></script>
   <!-- Start loading assets right away, to have them (partly) loaded already when they are requested -->
   <link rel="preload" href="Build//c7fb233efcb236e25ba3bca12f44f16c.data.unityweb" as="fetch" type="application/octet-stream" crossorigin>
@@ -140,13 +140,13 @@
       const maxPixelRatioMobile = 2.0;
       config.devicePixelRatio = Math.min(window.devicePixelRatio, maxPixelRatioMobile);
     }
-    else
-    {
+    //else
+    //{
 	
-        var canvas = document.querySelector("#unity-canvas");
-        canvas.style.width = "50%";
-        canvas.style.position = "fixed";
-    }
+       // var canvas = document.querySelector("#unity-canvas");
+      //  canvas.style.width = "50%";
+       // canvas.style.position = "fixed";
+    //}
 
 
     var canvas = document.querySelector("#unity-canvas");
