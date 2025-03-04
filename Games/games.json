@@ -34,6 +34,15 @@
       "game_short_name": "PGA",
       "game_status": "PUBLISHED",
       "game_link": "https://t.me/y0games_bot/PGA"
+    },
+    {
+      "game_description": "Taxi Game",
+      "game_id": 2,
+      "game_image_url": "https://bertlomewos.github.io/Taxi/TemplateData/unity-logo-dark.png",
+      "game_name": "Taxi Puzle",
+      "game_short_name": "PGA",
+      "game_status": "PUBLISHED",
+      "game_link": "https://bertlomewos.github.io/Taxi/"
     }
   ]
 }
