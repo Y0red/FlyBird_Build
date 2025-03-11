@@ -1,4 +1,5 @@
-"games": [
+{
+    "games": [
     {
       "game_description": "2048",
       "game_id": 1,
@@ -36,3 +37,4 @@
       "game_link": "https://fun.et/addistile/"
     }
   ]
+}
