@@ -27,17 +27,8 @@
       "game_link": "https://fun.et/2048/"
     },
     {
-      "game_description": "Addis Flap Tap",
-      "game_id": 2,
-      "game_image_url": "https://y0red.github.io/FlyBird_Build/Games/screenshot512x384.jpg",
-      "game_name": "Flap Tap",
-      "game_short_name": "PGA",
-      "game_status": "PUBLISHED",
-      "game_link": "https://y0red.github.io/FlyBird_Build/Games/NewGame2/"
-    },
-    {
       "game_description": "Taxi Mash",
-      "game_id": 3,
+      "game_id": 2,
       "game_image_url": "https://fun.et/taximash/banner/banner.png",
       "game_name": "Taxi Mash",
       "game_short_name": "Taxi Mash",
@@ -46,12 +37,21 @@
     },
     {
       "game_description": "Addis Tile",
-      "game_id": 4,
+      "game_id": 3,
       "game_image_url": "https://fun.et/addistile/banner/banner.png",
       "game_name": "Addis Tile",
       "game_short_name": "Addis Tile",
       "game_status": "PUBLISHED",
       "game_link": "https://fun.et/addistile/"
+    },
+    {
+      "game_description": "Addis Flap Tap",
+      "game_id": 4,
+      "game_image_url": "https://y0red.github.io/FlyBird_Build/Games/screenshot512x384.jpg",
+      "game_name": "Flap Tap",
+      "game_short_name": "PGA",
+      "game_status": "PUBLISHED",
+      "game_link": "https://y0red.github.io/FlyBird_Build/Games/NewGame2/"
     }
   ]
 }
