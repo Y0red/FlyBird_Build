@@ -20,29 +20,29 @@
     {
       "game_description": "2048",
       "game_id": 1,
-      "game_image_url": "https://fun.et/2048/banner/banner.png",
+      "game_image_url": "http://196.190.251.131/matrix-games/2048/banner/banner.png",
       "game_name": "2048",
       "game_short_name": "2048",
       "game_status": "PUBLISHED",
-      "game_link": "https://fun.et/2048/"
+      "game_link": "http://196.190.251.131/matrix-games/2048/"
     },
     {
       "game_description": "Taxi Mash",
       "game_id": 2,
-      "game_image_url": "https://fun.et/taximash/banner/banner.png",
+      "game_image_url": "http://196.190.251.131/matrix-games/taximash/banner/banner.png",
       "game_name": "Taxi Mash",
       "game_short_name": "Taxi Mash",
       "game_status": "PUBLISHED",
-      "game_link": "https://fun.et/taximash/"
+      "game_link": "http://196.190.251.131/matrix-games/taximash/"
     },
     {
       "game_description": "Addis Tile",
       "game_id": 3,
-      "game_image_url": "https://fun.et/addistile/banner/banner.png",
+      "game_image_url": "http://196.190.251.131/matrix-games/addistile/banner/banner.png",
       "game_name": "Addis Tile",
       "game_short_name": "Addis Tile",
       "game_status": "PUBLISHED",
-      "game_link": "https://fun.et/addistile/"
+      "game_link": "http://196.190.251.131/matrix-games/addistile/"
     },
     {
       "game_description": "Addis Flap Tap",
