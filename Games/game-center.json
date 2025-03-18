@@ -182,7 +182,7 @@
       {
       "game_description": "Sweet Memory",
       "game_id": 19,
-      "game_image_url": "https://games.fun.et/seeetmemory/sprites/200x200.jpg",
+      "game_image_url": "https://games.fun.et/sweetmemory/sprites/200x200.jpg",
       "game_name": "Sweet Memory",
       "game_short_name": "PGA",
       "game_status": "PUBLISHED",
@@ -191,8 +191,8 @@
       {
       "game_description": "Water Melon Fruit 2048",
       "game_id": 20,
-      "game_image_url": "https://games.fun.et/watermelonfruit2048/icons/icon-512.jpg",
-      "game_name": "Sweet Memory",
+      "game_image_url": "https://games.fun.et/watermelonfruit2048/icons/icon-512.png",
+      "game_name": "Water Melon Fruit 2048",
       "game_short_name": "PGA",
       "game_status": "PUBLISHED",
       "game_link": "https://games.fun.et/watermelonfruit2048"
