@@ -2,6 +2,41 @@
   "ok": "false",
   "gamesConfig": [
     {
+      "game_url": "https://y0red.github.io/FlyBird_Build/Games/online-checkers/",
+      "game_short_name": "Dama Online",
+      "game_name": "DGA",
+      "game_status": "PUBLISHED",
+      "game_share_link": "https://t.me/y0games_bot/DGA"
+    },
+    {
+      "game_url": "https://y0red-bingo.netlify.app/",
+      "game_short_name": "Bingo",
+      "game_name": "BGA",
+      "game_status": "PUBLISHED",
+      "game_share_link": "https://t.me/y0games_bot/BGA"
+    },
+    {
+      "game_url": "https://y0red-bingo.netlify.app/",
+      "game_short_name": "Merge Blcok 2048",
+      "game_name": "MGA",
+      "game_status": "PUBLISHED",
+      "game_share_link": "https://t.me/y0games_bot/MGA"
+    },
+    {
+      "game_url": "https://y0red-bingo.netlify.app/",
+      "game_short_name": "Taxi Maxh",
+      "game_name": "TGA",
+      "game_status": "PUBLISHED",
+      "game_share_link": "https://t.me/y0games_bot/TGA"
+    },
+    {
+      "game_url": "https://y0red-bingo.netlify.app/",
+      "game_short_name": "Addis Tile",
+      "game_name": "AGA",
+      "game_status": "PUBLISHED",
+      "game_share_link": "https://t.me/y0games_bot/AGA"
+    },
+    {
       "game_url": "https://y0red.github.io/FlyBird_Build/Games/NewGame1/",
       "game_short_name": "guzogeez",
       "game_name": "Guzo Geez Game",
