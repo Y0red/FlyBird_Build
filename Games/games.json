@@ -18,6 +18,51 @@
   ],
   "games": [
     {
+      "game_description": "Dama/checkers",
+      "game_id": 3,
+      "game_image_url": "https://y0red.github.io/FlyBird_Build/Games/online-checkers/logo.png",
+      "game_name": "Dama King",
+      "game_short_name": "DGA",
+      "game_status": "PUBLISHED",
+      "game_link": "https://t.me/y0games_bot/DGA"
+    },
+	{
+      "game_description": "Bingo",
+      "game_id": 4,
+      "game_image_url": "https://y0red.github.io/FlyBird_Build/Games/bingo.jpeg",
+      "game_name": "Bingo",
+      "game_short_name": "BGA",
+      "game_status": "PUBLISHED",
+      "game_link": "https://t.me/y0games_bot/BGA"
+    },
+	{
+      "game_description": "Merge Block 2048",
+      "game_id": 5,
+      "game_image_url": "https://games.fun.et/icn/MergeShoot.png",
+      "game_name": "Merge 2048",
+      "game_short_name": "MGA",
+      "game_status": "PUBLISHED",
+      "game_link": "https://t.me/y0games_bot/MGA"
+    },
+	{
+      "game_description": "Addis Tile",
+      "game_id": 6,
+      "game_image_url": "https://games.fun.et/icn/AddisTile.png",
+      "game_name": "Addis Tile",
+      "game_short_name": "AGA",
+      "game_status": "PUBLISHED",
+      "game_link": "https://t.me/y0games_bot/AGA"
+    },
+	{
+      "game_description": "Taxi Mash",
+      "game_id": 7,
+      "game_image_url": "https://games.fun.et/icn/TaxiGame.png",
+      "game_name": "Taxi Mash",
+      "game_short_name": "TGA",
+      "game_status": "PUBLISHED",
+      "game_link": "https://t.me/y0games_bot/TGA"
+    },
+    {
       "game_description": "Guzo Geez",
       "game_id": 1,
       "game_image_url": "https://y0red.github.io/FlyBird_Build/Games/guzogeezlogo.png",
@@ -34,15 +79,6 @@
       "game_short_name": "PGA",
       "game_status": "PUBLISHED",
       "game_link": "https://t.me/y0games_bot/PGA"
-    },
-    {
-      "game_description": "Taxi Game",
-      "game_id": 2,
-      "game_image_url": "https://bertlomewos.github.io/Taxi/TemplateData/unity-logo-dark.png",
-      "game_name": "Taxi Puzle",
-      "game_short_name": "PGA",
-      "game_status": "PUBLISHED",
-      "game_link": "https://bertlomewos.github.io/Taxi/"
     }
   ]
 }
