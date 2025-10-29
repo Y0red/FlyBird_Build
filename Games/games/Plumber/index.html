@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+	<title>Plumber</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	
+	<!-- Made with Construct, the game and app creator :: https://www.construct.net -->
+	<meta name="generator" content="Scirra Construct">
+
+	<meta name="author" content="Muscle-SS">
+	<meta name="description" content="game">
+
+	<link rel="manifest" href="appmanifest.json">
+	<link rel="apple-touch-icon" sizes="128x128" href="icons/icon-128.png">
+	<link rel="apple-touch-icon" sizes="256x256" href="icons/icon-256.png">
+	<link rel="icon" type="image/png" href="icons/icon-256.png">
+
+	<link rel="stylesheet" href="style.css">
+
+
+
+</head> 
+ 
+<body>
+
+	
+
+<script>
+if (location.protocol.substr(0, 4) === "file")
+{
+	alert("Web exports won't work until you upload them. (When running on the file: protocol, browsers block many features from working for security reasons.)");
+}
+</script>
+	
+	<noscript>
+		<div id="notSupportedWrap">
+			<h2 id="notSupportedTitle">This content requires JavaScript</h2>
+			<p class="notSupportedMessage">JavaScript appears to be disabled. Please enable it to view this content.</p>
+		</div>
+	</noscript>
+	<script src="https://unpkg.com/@yred/mgc-web-bridge@1.0.0/dist/mgc-web-bridge.umd.js"></script>
+        <script>
+                console.log("MCG-Bridge-client library loaded.");
+                const hostOrigin = '*';
+                const gameClient = new window.MGCWebBridge.GameClient(hostOrigin);
+
+                    // Listen for commands from the Game Center
+                    gameClient.on('load_user_profile', (profile) => {
+                    console.log('Game: Received user profile', profile);
+                    });
+
+                    gameClient.on('pause', () => {
+                    console.log('Game: Pause command received.');
+                    });
+
+                    gameClient.on('play', () => {
+                    console.log('Game: Play command received.');
+                    });
+
+                    function closeGame()
+                    {
+                        if(gameClient){gameClient.emit('game_close');console.log('on_game_close');}
+                        else console.log('mgc-not-initialized');
+                    }
+
+                    function scoreUpdate(score)
+                    {
+                        if(gameClient){gameClient.emit('score_update', {'score': score });console.log('on_game_score_update');}
+                        else console.log('mgc-not-initialized');
+                    }
+
+                    function gameOver(score)
+                    {
+                        if(gameClient){gameClient.emit('game_over', { finalScore: score });console.log('on_game_over');}
+                        else console.log('mgc-not-initialized');
+                    }
+  </script>
+	<script src="scripts/modernjscheck.js"></script>
+	<script src="scripts/supportcheck.js"></script>
+	<script src="scripts/offlineclient.js" type="module"></script>
+	<script src="scripts/main.js" type="module"></script>
+	<script src="scripts/register-sw.js" type="module"></script>
+
+</body> 
+</html>
